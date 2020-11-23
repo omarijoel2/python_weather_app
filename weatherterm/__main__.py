@@ -23,6 +23,11 @@ argparser = ArgumentParser(
     prog='weatherterm',
     description='Weather info from weather.com on yout terminal')
 
+"""In order to make the parameters and the help output more organized, we are going to
+create a group within the ArgumentParser object. This group will contain all the required
+arguments that our application needs."""
+
+
 required = argparser.add_argument_group('required arguments')
 
 required.add_argument('-p', '--parser',
